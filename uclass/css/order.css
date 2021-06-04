@@ -1,0 +1,177 @@
+@charset "utf-8";
+.inner{
+    width: 1200px;
+}
+
+.right_con{
+    width: 950px;
+    margin-left: 30px;
+}
+
+.right_con header>ul {
+    background: #80C4AE;
+    border-radius: 4px 4px 0 0;
+    padding-left: 19px;
+}
+
+.right_con header>ul>li {
+    float: left;
+    font-size: 14px;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+}
+
+.right_con header>ul>li:first-of-type {
+    width: 381px;
+    text-align: left;
+}
+
+.right_con header>ul>li:nth-of-type(2) {
+    width: 100px;
+}
+
+.right_con header>ul>li:nth-of-type(3) {
+    width: 190px;
+}
+
+.right_con header>ul>li:nth-of-type(4) {
+    width: 90px;
+}
+
+.right_con header>ul>li:last-of-type {
+    width: 170px;
+}
+
+/* 订单列表 */
+
+.order_list>li {
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.order_list .desc>li {
+    float: left;
+    width: 930px;
+    height: 148px;
+}
+
+.order_list .desc>li:not(:first-of-type) {
+    line-height: 148px;
+    text-align: center;
+}
+
+.desc>li, .desc>li>div>span {
+    font-size: 14px;
+    color: #333;
+}
+
+/* 订单信息 */
+
+.desc>li:first-of-type {
+    width: 381px;
+    padding-left: 19px;
+}
+
+.desc>li:first-of-type>header {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    line-height: 22px;
+    margin: 20px 0 10px;
+}
+
+.desc>li:first-of-type>div {
+    font-size: 0;
+}
+
+
+.desc>li:first-of-type>div>img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #d8d8d8;
+    margin-right: 10px;
+}
+
+.desc>li:first-of-type>div>span {
+    line-height: 36px;
+}
+
+.desc>li:first-of-type>div>i {
+    display: inline-block;
+    height: 10px;
+    border-radius: 2.5px;
+    border: 1px solid #80C4AE;
+    margin: 0 10px;
+    vertical-align: -1px;
+}
+
+.desc>li:first-of-type>footer {
+    font-size: 0;
+    line-height: 22px;
+    margin: 20px 0;
+}
+
+.desc>li:first-of-type>footer>span {
+    font-size: 14px;
+    color: #666;
+    margin-right: 10px;
+}
+
+/* 单价 */
+
+.desc>li:nth-of-type(2) {
+    width: 100px;
+}
+
+/* 实付金额 */
+
+.desc>li:nth-of-type(3) {
+    width: 190px;
+}
+
+/* 交易状态 */
+
+.desc>li:nth-of-type(4) {
+    width: 90px;
+}
+
+/* 交易操作 */
+/* 订单未支付状态 */
+.desc>li:last-of-type {
+    width: 170px;
+    font-size: 0;
+}
+
+.desc>li>a:first-of-type {
+    font-size: 14px;
+    color: #80C4AE;
+    text-decoration: underline;
+    margin-right: 10px;
+}
+
+.desc>li>a:nth-of-type(2) {
+    font-size: 14px;
+    color: red;
+}
+
+.desc>li>a:nth-of-type(3) {
+    font-size: 14px;
+    color: #80C4AE;
+    text-decoration: none;
+    display: none;
+}
+
+/* 已支付的订单 */
+
+.paid>.desc>li>a:first-of-type,
+.paid>.desc>li>a:nth-of-type(2) {
+    display: none;
+}
+
+.paid>.desc>li>a {
+    font-size: 14px;
+    color: #80C4AE;
+    text-decoration: none;
+    display: block;
+}

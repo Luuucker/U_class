@@ -1,0 +1,250 @@
+@charset "utf-8";
+
+/* banner */
+
+.banner {
+    margin-top: 30px;
+    position: relative;
+}
+
+
+.banner_pic li{
+    display: none;
+}
+
+.banner_pic .active{
+    display: block;
+}
+
+.pre_next span {
+    width: 40px;
+    height: 68px;
+    margin-top: -34px;
+    background-image: url(../images/pre_next.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 40px;
+}
+
+.pre_next span:last-of-type {
+    left: auto;
+    right: 40px;
+    background-position-x: right;
+}
+
+.carousel_points {
+    position: absolute;
+    left: 540px;
+    bottom: 27px;
+}
+
+.carousel_points li {
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin: 0 3px;
+    border-radius: 5px;
+    font-size: 0;
+    background-color: #e5e5e5;
+}
+
+.carousel_points .active{
+    background-color: yellow;
+}
+
+/* --- main --- */
+
+.main {
+    font-family: '微软雅黑';
+}
+
+.title {
+    margin-top: 45px;
+    margin-bottom: 18px;
+}
+
+.title h2 {
+    font-size: 20px;
+    line-height: 28px;
+    color: #333;
+    text-indent: 17px;
+    position: relative;
+}
+/* 左边矩形 */
+.title h2::before {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 20px;
+    background-color: #74C6B3;
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+
+.title a {
+    font-size: 14px;
+    line-height: 28px;
+    color: #74C6B3;
+    padding-right: 18px;
+    position: relative;
+}
+/* 右边小三角 */
+.title a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid #74C6B3;
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    position: absolute;
+    right: 0;
+    top: 9px;
+}
+
+.content li {
+    float: left;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    margin-right: 20px;
+    margin-bottom: 22px;
+    box-shadow: 0 2px 3px 3px rgba(111, 111, 111, .07);
+}
+
+.content .margin_r0 {
+    margin-right: 0px;
+}
+
+.content .pic {
+    position: relative;
+}
+/* 图片左上角 */
+.course_version {
+    width: 71px;
+    height: 33px;
+    border-radius: 4px 0 12px 0;
+    background-color: rgba(0, 0, 0, .3);
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    line-height: 33px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* 图片中下 */
+.person_num {
+    width: 100%;
+    height: 33px;
+    background-color: rgba(0, 0, 0, .3);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 12px;
+    color: #fff;
+    line-height: 33px;
+    text-indent: 10px;
+}
+
+.content .txt {
+    padding: 6px 10px;
+    background-color: #f8f8f8;
+}
+/* 课程名称 */
+.content .txt p {
+    font-size: 14px;
+    line-height: 26px;
+    color: #333;
+}
+/* 课时数 */
+.content .txt p:last-of-type {
+    font-size: 12px;
+    line-height: 24px;
+    color: #7a7a7a;
+}
+/* 免费学习 */
+.content .txt a {
+    width: 86px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: #74C6B3;
+    margin-top: 9px;
+
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+/* --- 同步课程 --- */
+
+.sync_course .pic{
+    width: 280px;
+    height: 163px;
+}
+
+/* --- 中部广告 --- */
+.banner_mid{
+    width: 1180px;
+    height: 186px;
+    margin-top: 32px;
+}
+
+/* --- 在线测试 --- */
+
+.test_online .pic{
+    width: 380px;
+    height: 163px;
+}
+
+.test_online .person_num span{
+    float:right;
+    margin-right: 28px;
+}
+
+/* --- 精品课程 --- */
+
+.boutique_course .pic{
+    width: 280px;
+    height: 163px;
+}
+
+.boutique_course .content{
+    width: 896px;
+}
+
+
+/* 底部跳转 */
+.bottom_nav{
+    margin: 19px 0 36px;
+    /* margin-bottom: 36px; */
+}
+
+.bottom_nav li{
+    float: left;
+    width: 380px;
+    height: 100px;
+    margin-right: 20px;
+    text-align: center;
+
+    background-image: url(../images/course_bg1.png);
+}
+
+.bottom_nav li:nth-of-type(2){
+    background-image: url(../images/course_bg2.png);
+}
+
+.bottom_nav li:last-of-type{
+    margin-right: 0;
+    background-image: url(../images/course_bg3.png);
+}
+
+
+.bottom_nav li a{
+    font: 26px/100px '微软雅黑';
+    color: #fff;
+}
+

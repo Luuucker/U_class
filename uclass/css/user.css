@@ -1,0 +1,194 @@
+@charset 'utf-8';
+.right_con header {
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.right_con header a {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+    color: #333;
+    line-height: 30px;
+    text-align: center;
+}
+
+.right_con header .active {
+    font-size: 16px;
+    color: #fff;
+    border-radius: 4px;
+    background-color: #74C6B3;
+}
+
+/* 表单区域 */
+
+.right_con form>ul>li {
+    float: left;
+    width: 370px;
+    height: 40px;
+    margin-right: 130px;
+    margin-bottom: 30px;
+    /* border: 1px solid #bfa; */
+    line-height: 40px;
+}
+
+.right_con form>ul>.margin_r0 {
+    margin-right: 0;
+}
+
+.right_con form>ul>.margin_b20 {
+    margin-bottom: 20px;
+}
+
+/* 调整头像栏 */
+
+.right_con form>ul>li:first-of-type {
+    width: 930px;
+    height: 75px;
+    margin: 20px 0 12px;
+    line-height: 75px;
+}
+
+.right_con form>ul>li:first-of-type img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+/* 更换头像时的遮罩 */
+
+.right_con form>ul>li:first-of-type>div {
+    position: relative;
+    float: left;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.img_mask {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .5);
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+    position: absolute;
+    top: 0;
+    display: none;
+    cursor: pointer;
+}
+
+.right_con form>ul>li:first-of-type>div:hover .img_mask {
+    display: block;
+}
+
+/* 调整最后一栏 */
+
+.right_con form>ul>li:last-of-type {
+    width: 930px;
+    margin-bottom: 0;
+}
+
+.right_con form li>span {
+    float: left;
+    width: 110px;
+    font-size: 14px;
+    color: #333;
+    text-indent: 15px;
+}
+
+.right_con form input[type=text], .right_con form select {
+    width: 240px;
+    height: 38px;
+    border-radius: 4px;
+    border: 1px solid #80C4AE;
+    appearance: none;
+    padding-left: 18px;
+}
+
+/* 调整真实姓名input框 */
+
+.right_con .real_name input[type=text] {
+    font-size: 12px;
+}
+
+.right_con .real_name input[type=text]::placeholder {
+    color: #999;
+}
+
+/* 学员性别 */
+
+.right_con .sex {
+    font-size: 14px;
+    color: #999;
+}
+
+.right_con input[type=radio] {
+    margin-right: 14px;
+    vertical-align: -1px;
+}
+
+.right_con input[type=radio]:last-of-type {
+    margin-left: 50px;
+}
+
+/* 调整生日栏 */
+
+.right_con .birthday {
+    position: relative;
+}
+
+.right_con form .birthday div {
+    width: 20px;
+    height: 20px;
+    background-color: #baf;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-image: url(../images/user/user_icons.png);
+    background-repeat: no-repeat;
+    background-position: -7px -223px;
+    cursor: pointer;
+}
+
+/* 调整联系方式栏 */
+
+.right_con form .phone_num {
+    width: 104px;
+    text-indent: 0;
+}
+
+.right_con form i {
+    font-size: 12px;
+    color: #80C4AE;
+}
+
+/* 调整含下拉框的 */
+
+.right_con>form ul li select {
+    font-size: 16px;
+    color: #666;
+    background-image: url(../images/user/user_icons.png);
+    background-repeat: no-repeat;
+    background-position: 220px -175px;
+}
+
+/* 学习阶段后 */
+
+.right_con form li:last-of-type i {
+    margin-left: 10px;
+}
+
+.right_con form input[type=submit] {
+    float: right;
+    width: 54px;
+    height: 30px;
+    border-radius: 4px;
+    margin-right: 60px;
+    background-color: #74C6B3;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}

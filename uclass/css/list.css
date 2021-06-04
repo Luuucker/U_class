@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+body{
+    background-color: #fff;
+}
+
+/* 选择列表 */
+
+.top_list{
+    margin: 20px 0 40px;
+    font-family: "微软雅黑";
+}
+
+.top_list dt, dd{
+    float: left;
+}
+
+.top_list .margin_r0{
+    margin-right: 0;
+}
+
+.top_list dt{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 40px;
+    color: #333;
+
+    width: 80px;
+    margin-right: 20px;
+}
+
+.top_list dd{
+    font-size: 0px;
+    width: 1080px;
+}
+
+.top_list dd a{
+    display: inline-block;
+    width: 52px;
+    height: 26px;
+    margin: 7px 24px 7px;
+
+    font-size: 14px;
+    line-height: 26px;
+    color: #666;
+    text-align: center;
+}
+
+.top_list dd a:hover{
+    color: #fff;
+    background-color: #80C4AE;
+    border-radius: 4px;
+}
+
+.top_list dd select{
+    appearance: none;
+    background: transparent;
+
+    width: 178px;
+    height: 38px;
+    border: 1px solid #80C4AE;
+    border-radius: 4px;
+    margin-right: 20px;
+
+    font-size: 16px;
+    color: #666;
+    text-indent: 18px;
+    
+
+    background-image: url(../images/icons.png);
+    background-repeat: no-repeat;
+    background-position: 158px 10px;
+    
+}
+
+/* 课程列表 */
+.content_list li:nth-of-type(3n){
+    margin-right: 0;
+}
+
+.content_list .pic{
+    width: 380px;
+    height: 196px;
+}
+
+.content_list .pic img{
+    width: 100%;
+}
+
+.content_list .txt a{
+    font-size: 14.47px;
+    font-weight: normal;
+}
+
+/* 翻页 */
+.page{
+    margin-left: 260px;
+    margin-top: 18px;
+
+}
+
+.page li{
+    float: left;
+    margin-right: 10px;
+    background-color: #ededed;
+    border-radius: 4px;
+
+}
+
+.page li a{
+    display: inline-block;
+    font: 18px/40px '微软雅黑';
+    color: #333;
+    padding: 0 16px;
+    border-radius: 4px;
+}
+
+.page li:first-of-type,
+.page li:last-of-type{
+    /* padding: 0 20px; */
+    margin-right: 27px;
+}
+
+.page li:hover a{
+    color: #fff;
+    background-color: #80C4AE;
+}
+
+.page .active a{
+    color: #fff;
+    background-color: #80C4AE;
+}
+
+.page .disabled a{
+    color: rgb(172, 172, 172);
+    
+}

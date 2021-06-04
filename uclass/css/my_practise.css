@@ -1,0 +1,254 @@
+@charset "utf-8";
+.inner{
+    width: 1200px;
+}
+
+.right_con{
+    width: 950px;
+    margin-left: 30px;
+}
+
+/* 选择列表 */
+
+.top_list{
+    margin: 20px 0 8px;
+    font-family: "微软雅黑";
+}
+
+.top_list dt, dd{
+    float: left;
+}
+
+.top_list .margin_r0{
+    margin-right: 0;
+}
+
+.top_list dt{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 40px;
+    color: #333;
+    margin-right: 81px;
+}
+
+.top_list dd{
+    font-size: 0px;
+    width: 837px;
+}
+
+.top_list dd a{
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+    margin: 7px 48px 7px 0;
+
+    font-size: 14px;
+    line-height: 26px;
+    color: #666;
+    text-align: center;
+}
+
+.top_list dd a:hover{
+    color: #fff;
+    background-color: #80C4AE;
+    border-radius: 4px;
+}
+
+.top_list dd .active{
+    color: #fff;
+    background-color: #80C4AE;
+    border-radius: 4px;
+}
+
+.top_list dd select{
+    appearance: none;
+    background: transparent;
+
+    width: 178px;
+    height: 38px;
+    border: 1px solid #80C4AE;
+    border-radius: 4px;
+    margin-right: 20px;
+
+    font-size: 16px;
+    color: #666;
+    text-indent: 18px;
+    
+
+    background-image: url(../images/icons.png);
+    background-repeat: no-repeat;
+    background-position: 158px 10px;
+    
+}
+
+/* 课程列表 */
+/* 课程商品框模型 */
+.title {
+    margin-top: 45px;
+    margin-bottom: 18px;
+}
+
+.title h2 {
+    font-size: 20px;
+    line-height: 28px;
+    color: #333;
+    text-indent: 17px;
+    position: relative;
+}
+
+.title h2::before {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 20px;
+    background-color: #74C6B3;
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+
+.title a {
+    font-size: 14px;
+    line-height: 28px;
+    color: #74C6B3;
+    padding-right: 18px;
+    position: relative;
+}
+
+.title a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid #74C6B3;
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    position: absolute;
+    right: 0;
+    top: 9px;
+}
+
+.content li {
+    float: left;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    margin-bottom: 22px;
+    box-shadow: 0 2px 3px 3px rgba(111, 111, 111, .07);
+}
+
+.content li:nth-of-type(odd){
+    margin-right: 20px;
+}
+
+.content .margin_r0 {
+    margin-right: 0px;
+}
+
+.content .pic {
+    width: 460px;
+    height: 196px;
+    position: relative;
+}
+
+.course_version {
+    width: 71px;
+    height: 33px;
+    border-radius: 4px 0 12px 0;
+    background-color: rgba(0, 0, 0, .3);
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    line-height: 33px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.person_num {
+    width: 450px;
+    height: 33px;
+    background-color: rgba(0, 0, 0, .3);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 12px;
+    color: #fff;
+    line-height: 33px;
+    /* text-indent: 20px; */
+    padding-left: 10px;
+}
+
+.content .txt {
+    padding: 6px 10px;
+}
+
+.content .txt p {
+    font-size: 14px;
+    line-height: 26px;
+    color: #333;
+}
+
+.content .txt p:last-of-type {
+    font-size: 12px;
+    line-height: 24px;
+    color: #7a7a7a;
+}
+
+.content .txt a {
+    width: 86px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: #74C6B3;
+    margin-top: 9px;
+
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+
+/* 翻页 */
+.page{
+    margin-left: 260px;
+    margin-top: 18px;
+
+}
+
+.page li{
+    float: left;
+    margin-right: 10px;
+    background-color: #ededed;
+    border-radius: 4px;
+
+}
+
+.page li a{
+    display: inline-block;
+    font: 18px/40px '微软雅黑';
+    color: #333;
+    padding: 0 16px;
+    border-radius: 4px;
+}
+
+.page li:first-of-type,
+.page li:last-of-type{
+    /* padding: 0 20px; */
+    margin-right: 27px;
+}
+
+.page li:hover a{
+    color: #fff;
+    background-color: #80C4AE;
+}
+
+.page .active a{
+    color: #fff;
+    background-color: #80C4AE;
+}
+
+.page .disabled a{
+    color: rgb(172, 172, 172);
+    
+}

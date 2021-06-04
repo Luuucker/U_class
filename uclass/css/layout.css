@@ -1,0 +1,126 @@
+@charset 'utf-8';
+
+
+/* 课程商品框模型 */
+.title {
+    margin-top: 45px;
+    margin-bottom: 18px;
+}
+
+.title h2 {
+    font-size: 20px;
+    line-height: 28px;
+    color: #333;
+    text-indent: 17px;
+    position: relative;
+}
+
+.title h2::before {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 20px;
+    background-color: #74C6B3;
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+
+.title a {
+    font-size: 14px;
+    line-height: 28px;
+    color: #74C6B3;
+    padding-right: 18px;
+    position: relative;
+}
+
+.title a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid #74C6B3;
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    position: absolute;
+    right: 0;
+    top: 9px;
+}
+
+.content li {
+    float: left;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    margin-right: 20px;
+    margin-bottom: 22px;
+    box-shadow: 0 2px 3px 3px rgba(111, 111, 111, .07);
+}
+
+.content .margin_r0 {
+    margin-right: 0px;
+}
+
+.content .pic {
+    position: relative;
+}
+
+.course_version {
+    width: 71px;
+    height: 33px;
+    border-radius: 4px 0 12px 0;
+    background-color: rgba(0, 0, 0, .3);
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    line-height: 33px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.person_num {
+    width: 100%;
+    height: 33px;
+    background-color: rgba(0, 0, 0, .3);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 12px;
+    color: #fff;
+    line-height: 33px;
+    text-indent: 10px;
+}
+
+.content .txt {
+    padding: 6px 10px;
+}
+
+.content .txt p {
+    font-size: 14px;
+    line-height: 26px;
+    color: #333;
+}
+
+.content .txt p:last-of-type {
+    font-size: 12px;
+    line-height: 24px;
+    color: #7a7a7a;
+}
+
+.content .txt a {
+    width: 86px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: #74C6B3;
+    margin-top: 9px;
+
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+
